@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:sharedUserId="colordict.uid.shared"
+    android:installLocation="auto"
+    package="com.socialnmobile.dictapps.notepad.color.note"
+    platformBuildVersionCode="26"
+    platformBuildVersionName="8.0.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+    <!-- Permite que app edite contenido de almacenamiento compartido. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permite que la aplicación se ejecute automáticamente una vez que el sistema se haya iniciado completamente. Esto puede hacer que el teléfono tarde más en iniciarse y puede permitir que la aplicación ralentice el funcionamiento global del dispositivo. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Permite que la aplicación controle la función de vibración. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Permite que la aplicación impida que el teléfono entre en modo de suspensión. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- Permite que la aplicación cree sockets de red y utilice protocolos de red personalizados. El navegador y otras aplicaciones proporcionan los medios necesarios para el envío de datos a Internet, por lo que no hace falta utilizar este permiso para eso. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon"
+        android:name="com.socialnmobile.colornote.ColorNote"
+        android:backupAgent="com.socialnmobile.colornote.ColorNoteBackupAgent"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:fullBackupOnly="true"
+        android:fullBackupContent="@xml/autobackupscheme"
+        android:resizeableActivity="true"
+        android:supportsPictureInPicture="true">
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIO673fQ6R3jVgPtleZsBfdAPiTLTlaKTQfL36Aw" />
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:resource="@dimen/app_defaultsize_w" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:resource="@dimen/app_defaultsize_h" />
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.socialnmobile.colornote.activity.Search" />
+        <provider
+            android:name="com.socialnmobile.colornote.data.NoteProvider"
+            android:exported="true"
+            android:authorities="note.socialnmobile.provider.colornote" />
+        <receiver
+            android:name="com.socialnmobile.colornote.receiver.TimeChangedReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.RETRY_RENEW_ON_BOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.socialnmobile.colornote.receiver.PowerConnectedReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.socialnmobile.colornote.receiver.BuildWidgetReceiver">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.BUILD_WIDGET" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.socialnmobile.colornote.receiver.ReminderReceiver">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.TIME_REMINDER" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.DAY_REMINDER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.socialnmobile.colornote.receiver.AutoSyncReceiver">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.AUTO_SYNC" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:label="@string/sticky_1x1_widget_name"
+            android:name="com.socialnmobile.colornote.receiver.NoteWidget">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_note_1x1" />
+        </receiver>
+        <receiver
+            android:label="@string/sticky_2x2_widget_name"
+            android:name="com.socialnmobile.colornote.receiver.NoteWidget2x2">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_note_2x2" />
+        </receiver>
+        <receiver
+            android:label="@string/today_2x2_widget_name"
+            android:name="com.socialnmobile.colornote.receiver.TodayWidget2x2">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_today_2x2" />
+        </receiver>
+        <service
+            android:name="com.socialnmobile.colornote.service.SDBackupService" />
+        <service
+            android:name="com.socialnmobile.colornote.service.BackgroundSyncService" />
+        <service
+            android:name="com.socialnmobile.colornote.service.ReceiverProcessService" />
+        <service
+            android:name="com.socialnmobile.colornote.oauth.KeepAliveService"
+            android:exported="true" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name"
+            android:name="com.socialnmobile.colornote.activity.Search"
+            android:taskAffinity="colornote.task.main"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEARCH" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:theme="@style/Theme.NoTitle.Light"
+            android:name="com.socialnmobile.colornote.activity.Archive"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.VIEW_BACKUP_ARCHIVE" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.NoTitle.Light"
+            android:label="@string/app_name"
+            android:name="com.socialnmobile.colornote.activity.Main"
+            android:taskAffinity="colornote.task.main"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <action
+                    android:name="android.intent.action.EDIT" />
+                <action
+                    android:name="android.intent.action.PICK" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="vnd.android.cursor.dir/vnd.socialnmobile.colornote.note" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.GET_CONTENT" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.socialnmobile.colornote.note" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.VIEW_CALENDAR" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.VIEW_TODAY_CALENDAR" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.LAUNCH_APP" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.SEARCH" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.VIEW_NOTES" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:label="@string/app_name"
+            android:name="com.socialnmobile.colornote.activity.NoteList"
+            android:targetActivity="com.socialnmobile.colornote.activity.Main">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.Trans.NoTitle.Light"
+            android:label="@string/app_name"
+            android:name="com.socialnmobile.colornote.activity.ActionReceiver"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="text/html" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.NoTitle.Light"
+            android:label="@string/app_name"
+            android:name="com.socialnmobile.colornote.activity.NoteEditor"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <action
+                    android:name="android.intent.action.EDIT" />
+                <action
+                    android:name="android.intent.action.INSERT" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.socialnmobile.colornote.note" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.INSERT" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="vnd.android.cursor.dir/vnd.socialnmobile.colornote.note" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Trans.NoTitle.Light"
+            android:label="@string/today"
+            android:name="com.socialnmobile.colornote.activity.Today"
+            android:taskAffinity="colornote.task.today"
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.TODAY" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Normal"
+            android:label="@string/settings"
+            android:name="com.socialnmobile.colornote.activity.Settings" />
+        <activity
+            android:theme="@style/Theme.Normal"
+            android:label="@string/master_password"
+            android:name="com.socialnmobile.colornote.activity.PasswordSetting"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.CHANGE_MASTER_PASSWORD" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Normal"
+            android:label="@string/reminder"
+            android:name="com.socialnmobile.colornote.activity.ReminderSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/copy_to_clipboard"
+            android:icon="@drawable/icon_clipboard"
+            android:name="com.socialnmobile.colornote.activity.SendToClipboard" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/send_as_attachment"
+            android:icon="@drawable/icon_attachment"
+            android:name="com.socialnmobile.colornote.activity.SendAsAttachment" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/menu_print"
+            android:icon="@drawable/icon_print"
+            android:name="com.socialnmobile.colornote.activity.SendToPrinter" />
+        <activity
+            android:theme="@style/Theme.Trans.NoTitle.Light"
+            android:name="com.socialnmobile.colornote.activity.SendToNoteByTitle">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.socialnmobile.colornote.note.title" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Trans.NoTitle.Light"
+            android:name="com.socialnmobile.colornote.activity.NoteWidgetConfigure"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Normal"
+            android:label="@string/online_backup"
+            android:name="com.socialnmobile.colornote.activity.SyncActivity"
+            android:taskAffinity="colornote.task.main"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.SYNC_STATUS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="note.socialnmobile.intent.action.SDCARD_BACKUP" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="ColorNote SyncDevSettings"
+            android:name="com.socialnmobile.colornote.sync.SyncDevSettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="com.socialnmobile.intent.action.DEVSETTINGS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="com.socialnmobile.intent.action.DEVCMD" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.socialnmobile.colornote.oauth.RedirectOauthReceiverActivity"
+            android:exported="true"
+            android:taskAffinity="colornote.task.main">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="com.googleusercontent.apps.908669027715" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.socialnmobile.colornote.sync.SyncService" />
+        <service
+            android:name="com.socialnmobile.colornote.sync.RealtimeSyncService" />
+    </application>
+</manifest>

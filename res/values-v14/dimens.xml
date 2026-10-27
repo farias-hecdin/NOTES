@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_list_item_height">50.0dip</dimen>
+    <dimen name="dialog_option_height">255.0dip</dimen>
+    <dimen name="pref_widget_color_size">20.0dip</dimen>
+    <dimen name="pref_widget_size">30.0dip</dimen>
+    <dimen name="widget_1x1_size">56.0dip</dimen>
+    <dimen name="widget_2x2_margin">0.0dip</dimen>
+</resources>

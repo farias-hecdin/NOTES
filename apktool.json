@@ -1,0 +1,33 @@
+{
+  "apkFileName": "ColorNote_3.11.16_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "res/raw/ic_arrow_down.svg",
+    "res/raw/ic_arrow_up.svg"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-261014",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "3.11.16",
+    "versionCode": "5600"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {},
+  "apkFilePath": "/storage/emulated/0/Apktool_M/ColorNote_3.11.16/ColorNote_3.11.16.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "8",
+    "targetSdkVersion": "23"
+  }
+}

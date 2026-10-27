@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_content_minheight">48.0dip</dimen>
+    <dimen name="dialog_padding_bottom">0.0dip</dimen>
+    <dimen name="dialog_padding_bottom_nobtn">18.0dip</dimen>
+    <dimen name="dialog_padding_less">4.0dip</dimen>
+    <dimen name="dialog_padding_side">24.0dip</dimen>
+    <dimen name="dialog_padding_side_less">20.0dip</dimen>
+    <dimen name="dialog_padding_top">18.0dip</dimen>
+    <dimen name="pref_widget_color_size">20.0dip</dimen>
+    <dimen name="pref_widget_size">32.0dip</dimen>
+</resources>

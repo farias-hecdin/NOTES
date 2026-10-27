@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notes_reminder_count">
+        <item quantity="other">Bugün için %d not var</item>
+        <item quantity="one">Bugün için 1 not var</item>
+        <item quantity="two">Bugün için %d not var</item>
+        <item quantity="few">Bugün için %d not var</item>
+        <item quantity="many">Bugün için %d not var</item>
+    </plurals>
+</resources>

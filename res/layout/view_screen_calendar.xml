@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.ScreenCalendar
+    android:id="@id/screen_calendar"
+    android:background="#ffe0e0e0"
+    android:padding="@dimen/gridlist_spacing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:hapticFeedbackEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/month_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.socialnmobile.colornote.view.MonthView
+            android:id="@id/month_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.socialnmobile.colornote.view.ScreenCalendar>

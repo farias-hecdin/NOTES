@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_dark">#ffcccccc</color>
+    <color name="accent_light">#ff333333</color>
+    <color name="btn_focused">#ffff6900</color>
+    <color name="btn_focused_border">#ffff6900</color>
+    <color name="btn_long_pressed_dark">#ddffff80</color>
+    <color name="btn_long_pressed_light">#ddffff80</color>
+    <color name="btn_pressed_dark">#fff8bc0e</color>
+    <color name="btn_pressed_light">#fff8bc0e</color>
+    <color name="btn_selected_border">#ffff3f00</color>
+    <color name="highlight_button_text_dark">#ff0099cc</color>
+    <color name="option_devider">#55888888</color>
+    <color name="accent_dark_holo">#ff0099cc</color>
+    <color name="accent_light_holo">#ff33b5e5</color>
+    <color name="btn_transparent_normal">#00000000</color>
+    <color name="dragndrop_background">#e060e060</color>
+    <color name="dropplace_background">#6060e060</color>
+    <color name="edit_title_transparent">#00000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

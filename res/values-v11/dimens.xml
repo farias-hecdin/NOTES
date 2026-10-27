@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_content_minheight">64.0dip</dimen>
+    <dimen name="dialog_padding_bottom">8.0dip</dimen>
+    <dimen name="dialog_padding_bottom_nobtn">8.0dip</dimen>
+    <dimen name="dialog_padding_less">4.0dip</dimen>
+    <dimen name="dialog_padding_side">16.0dip</dimen>
+    <dimen name="dialog_padding_side_less">12.0dip</dimen>
+    <dimen name="dialog_padding_top">8.0dip</dimen>
+    <dimen name="spinner_dropdown_item_height">48.0dip</dimen>
+</resources>

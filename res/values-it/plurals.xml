@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notes_reminder_count">
+        <item quantity="other">%d note del giorno</item>
+        <item quantity="one">1 nota del giorno</item>
+        <item quantity="two">%d note del giorno</item>
+        <item quantity="few">%d note del giorno</item>
+        <item quantity="many">%d note del giorno</item>
+    </plurals>
+</resources>
