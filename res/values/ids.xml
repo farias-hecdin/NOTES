@@ -281,4 +281,5 @@
     <item type="id" name="sync" />
     <item type="id" name="disconnect" />
     <item type="id" name="sign_out" />
+    <item type="id" name="btn_calendar_overview" />
 </resources>

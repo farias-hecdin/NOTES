@@ -24,13 +24,15 @@
             android:id="@id/viewlist"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:listSelector="@drawable/normal_list_selector" />
+            android:listSelector="@drawable/normal_list_selector"
+            android:overScrollFooter="@null" />
         <com.socialnmobile.colornote.view.DragDropListView
             android:id="@id/editlist"
             android:visibility="gone"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:listSelector="@drawable/normal_list_selector" />
+            android:listSelector="@drawable/normal_list_selector"
+            android:overScrollFooter="@null" />
         <TextView
             android:textSize="24.0sp"
             android:gravity="center"

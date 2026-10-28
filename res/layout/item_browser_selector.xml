@@ -17,5 +17,6 @@
         android:layout_width="0.0dip"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8.0dip"
-        android:layout_weight="1.0" />
+        android:layout_weight="1.0"
+        android:layout_marginStart="8.0dip" />
 </LinearLayout>

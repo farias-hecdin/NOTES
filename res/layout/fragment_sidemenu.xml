@@ -58,5 +58,6 @@
         android:listSelector="@drawable/normal_list_selector_dark"
         android:cacheColorHint="#00000000"
         android:divider="@drawable/divider_sidemenu"
-        android:layout_below="@id/top_bar" />
+        android:layout_below="@id/top_bar"
+        android:overScrollFooter="@null" />
 </RelativeLayout>

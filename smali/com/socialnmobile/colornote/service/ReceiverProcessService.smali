@@ -232,10 +232,25 @@
     return-void
 .end method
 
+.method public onDestroy()V
+    .locals 1
+
+    .prologue
+    invoke-super {p0}, Landroid/app/Service;->onDestroy()V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/socialnmobile/colornote/service/ReceiverProcessService;->stopForeground(Z)V
+
+    return-void
+.end method
+
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 10
 
     .prologue
+    invoke-static {p0, p1}, Lcom/socialnmobile/colornote/Compat;->startForegroundIfRequested(Landroid/app/Service;Landroid/content/Intent;)V
+
     .line 91
     if-nez p1, :cond_0
 

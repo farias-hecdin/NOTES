@@ -325,4 +325,7 @@
     <string name="like_us_on_fb">\"Me gusta\" en Facebook</string>
     <string name="today_2x2_widget_name">ColorNote Hoy 2x2</string>
     <string name="msg_signup_tos_and_privacy">Al hacer clic en \"Sign Up\", usted acepta nuestros <a href="http://www.colornote.com/terms-of-service.html" target="_blank">Términos</a> y confirma que ha leído nuestra <a href="http://www.colornote.com/privacy-policy.html" target="_blank">Política de Privacidad</a>.</string>
+    <string name="calendar_overview_empty">No hay notas registradas en el calendario</string>
+    <string name="calendar_overview_repeat">Repetir</string>
+    <string name="calendar_overview_title">Notas del calendario</string>
 </resources>

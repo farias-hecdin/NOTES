@@ -14,8 +14,6 @@
     <public type="attr" name="dialogNoButtonContentStyle" id="0x7f01000b" />
     <public type="attr" name="dialogNoButtonContentStyleLess" id="0x7f01000c" />
     <public type="attr" name="isLight" id="0x7f01000d" />
-    <public type="drawable" name="text_cursor_holo_dark" id="0x7f02006c" />
-    <public type="drawable" name="text_cursor_holo_light" id="0x7f02006d" />
     <public type="drawable" name="bg_bottom_bar" id="0x7f020000" />
     <public type="drawable" name="bg_conflict_msg" id="0x7f020002" />
     <public type="drawable" name="bg_edit_title" id="0x7f020003" />
@@ -28,6 +26,8 @@
     <public type="drawable" name="bg_widget_select" id="0x7f02000e" />
     <public type="drawable" name="bg_widget_select_normal" id="0x7f02000f" />
     <public type="drawable" name="bg_widget_select_pressed" id="0x7f020010" />
+    <public type="drawable" name="bottom_bar" id="0x7f020011" />
+    <public type="drawable" name="browser_icon" id="0x7f020012" />
     <public type="drawable" name="btn_color_selector" id="0x7f020013" />
     <public type="drawable" name="btn_color_selector_dialog" id="0x7f020014" />
     <public type="drawable" name="btn_color_selector_list" id="0x7f020015" />
@@ -49,7 +49,10 @@
     <public type="drawable" name="btn_transparent_transition_light" id="0x7f020025" />
     <public type="drawable" name="btn_update" id="0x7f020026" />
     <public type="drawable" name="btn_update_normal" id="0x7f020027" />
+    <public type="drawable" name="check_off" id="0x7f020028" />
+    <public type="drawable" name="dialog_full_dark" id="0x7f020029" />
     <public type="drawable" name="dialog_full_dark_material" id="0x7f02002a" />
+    <public type="drawable" name="dialog_full_light" id="0x7f02002b" />
     <public type="drawable" name="dialog_full_light_material" id="0x7f02002c" />
     <public type="drawable" name="divider_checklist" id="0x7f02002d" />
     <public type="drawable" name="divider_gray" id="0x7f02002e" />
@@ -57,7 +60,19 @@
     <public type="drawable" name="divider_option_list" id="0x7f020030" />
     <public type="drawable" name="divider_sidemenu" id="0x7f020031" />
     <public type="drawable" name="divider_sidemenu_internal" id="0x7f020032" />
+    <public type="drawable" name="empty_list_icon" id="0x7f020034" />
+    <public type="drawable" name="facebook_icon" id="0x7f020035" />
+    <public type="drawable" name="ic_internal" id="0x7f020036" />
     <public type="drawable" name="ic_list_number_no_use" id="0x7f020038" />
+    <public type="drawable" name="ic_menu_close_clear_cancel" id="0x7f020039" />
+    <public type="drawable" name="ic_menu_power_off" id="0x7f02003a" />
+    <public type="drawable" name="ic_menu_refresh" id="0x7f02003b" />
+    <public type="drawable" name="ic_notification_text_lollipop" id="0x7f02003c" />
+    <public type="drawable" name="ic_notification_today_lollipop" id="0x7f02003d" />
+    <public type="drawable" name="ic_sdcard" id="0x7f02003e" />
+    <public type="drawable" name="icon_attachment" id="0x7f020040" />
+    <public type="drawable" name="icon_clipboard" id="0x7f020041" />
+    <public type="drawable" name="icon_print" id="0x7f020042" />
     <public type="drawable" name="icon_theme_dark" id="0x7f020043" />
     <public type="drawable" name="icon_theme_default" id="0x7f020044" />
     <public type="drawable" name="icon_theme_soft" id="0x7f020045" />
@@ -65,6 +80,10 @@
     <public type="drawable" name="indicator_dot_white" id="0x7f020047" />
     <public type="drawable" name="item_background" id="0x7f020048" />
     <public type="drawable" name="item_background_selected" id="0x7f020049" />
+    <public type="drawable" name="list_divider_holo_dark" id="0x7f02004a" />
+    <public type="drawable" name="list_divider_holo_light" id="0x7f02004b" />
+    <public type="drawable" name="menu_dropdown_panel_holo_dark" id="0x7f02004e" />
+    <public type="drawable" name="menu_dropdown_panel_holo_light" id="0x7f02004f" />
     <public type="drawable" name="monthview_selector_focused" id="0x7f020050" />
     <public type="drawable" name="monthview_selector_longpressed" id="0x7f020051" />
     <public type="drawable" name="monthview_selector_pressed" id="0x7f020052" />
@@ -77,25 +96,9 @@
     <public type="drawable" name="note_list_selector_longpressed" id="0x7f020059" />
     <public type="drawable" name="note_list_selector_pressed" id="0x7f02005a" />
     <public type="drawable" name="note_list_selector_transition" id="0x7f02005b" />
-    <public type="drawable" name="tab_indicator_under_v10" id="0x7f020069" />
-    <public type="drawable" name="textfield" id="0x7f02006e" />
-    <public type="drawable" name="screen_background_gray" id="0x7f020076" />
-    <public type="drawable" name="ic_notification_text_lollipop" id="0x7f02003c" />
-    <public type="drawable" name="ic_notification_today_lollipop" id="0x7f02003d" />
-    <public type="drawable" name="bg_checklist_1x1" id="0x7f020001" />
-    <public type="drawable" name="bg_note_1x1" id="0x7f020005" />
-    <public type="drawable" name="bg_note_item" id="0x7f020007" />
-    <public type="drawable" name="bg_widget_normal" id="0x7f02000c" />
-    <public type="drawable" name="bg_widget_pressed" id="0x7f02000d" />
-    <public type="drawable" name="check_off" id="0x7f020028" />
-    <public type="drawable" name="dialog_full_dark" id="0x7f020029" />
-    <public type="drawable" name="dialog_full_light" id="0x7f02002b" />
-    <public type="drawable" name="ic_list_number" id="0x7f020037" />
-    <public type="drawable" name="ic_widget_select" id="0x7f02003f" />
-    <public type="drawable" name="list_divider_holo_dark" id="0x7f02004a" />
-    <public type="drawable" name="list_divider_holo_light" id="0x7f02004b" />
-    <public type="drawable" name="menu_dropdown_panel_holo_dark" id="0x7f02004e" />
-    <public type="drawable" name="menu_dropdown_panel_holo_light" id="0x7f02004f" />
+    <public type="drawable" name="signin_email" id="0x7f02005c" />
+    <public type="drawable" name="signin_facebook" id="0x7f02005d" />
+    <public type="drawable" name="signin_google" id="0x7f02005e" />
     <public type="drawable" name="stat_textnote_1" id="0x7f02005f" />
     <public type="drawable" name="stat_textnote_2" id="0x7f020060" />
     <public type="drawable" name="stat_textnote_3" id="0x7f020061" />
@@ -106,33 +109,33 @@
     <public type="drawable" name="stat_textnote_8" id="0x7f020066" />
     <public type="drawable" name="stat_textnote_9" id="0x7f020067" />
     <public type="drawable" name="stat_today" id="0x7f020068" />
+    <public type="drawable" name="tab_indicator_under_v10" id="0x7f020069" />
+    <public type="drawable" name="tab_selected" id="0x7f02006a" />
+    <public type="drawable" name="tab_unselected" id="0x7f02006b" />
+    <public type="drawable" name="textfield" id="0x7f02006e" />
+    <public type="drawable" name="title_error" id="0x7f020072" />
+    <public type="drawable" name="title_lock" id="0x7f020073" />
+    <public type="drawable" name="topbar_shadow" id="0x7f020074" />
+    <public type="drawable" name="user_icon" id="0x7f020075" />
+    <public type="drawable" name="screen_background_gray" id="0x7f020076" />
+    <public type="drawable" name="bg_overview_fab" id="0x7f020077" />
+    <public type="drawable" name="ic_back_overview" id="0x7f020078" />
+    <public type="drawable" name="ic_overview_notes" id="0x7f020079" />
+    <public type="drawable" name="bg_checklist_1x1" id="0x7f020001" />
+    <public type="drawable" name="bg_note_1x1" id="0x7f020005" />
+    <public type="drawable" name="bg_note_item" id="0x7f020007" />
+    <public type="drawable" name="bg_widget_normal" id="0x7f02000c" />
+    <public type="drawable" name="bg_widget_pressed" id="0x7f02000d" />
+    <public type="drawable" name="drawer_shadow" id="0x7f020033" />
+    <public type="drawable" name="ic_list_number" id="0x7f020037" />
+    <public type="drawable" name="ic_widget_select" id="0x7f02003f" />
+    <public type="drawable" name="logo_grayscale_dark" id="0x7f02004c" />
+    <public type="drawable" name="logo_grayscale_light" id="0x7f02004d" />
     <public type="drawable" name="textfield_default" id="0x7f02006f" />
     <public type="drawable" name="textfield_disabled" id="0x7f020070" />
     <public type="drawable" name="textfield_selected" id="0x7f020071" />
-    <public type="drawable" name="title_error" id="0x7f020072" />
-    <public type="drawable" name="title_lock" id="0x7f020073" />
-    <public type="drawable" name="bottom_bar" id="0x7f020011" />
-    <public type="drawable" name="browser_icon" id="0x7f020012" />
-    <public type="drawable" name="empty_list_icon" id="0x7f020034" />
-    <public type="drawable" name="facebook_icon" id="0x7f020035" />
-    <public type="drawable" name="ic_internal" id="0x7f020036" />
-    <public type="drawable" name="ic_menu_close_clear_cancel" id="0x7f020039" />
-    <public type="drawable" name="ic_menu_power_off" id="0x7f02003a" />
-    <public type="drawable" name="ic_menu_refresh" id="0x7f02003b" />
-    <public type="drawable" name="ic_sdcard" id="0x7f02003e" />
-    <public type="drawable" name="icon_attachment" id="0x7f020040" />
-    <public type="drawable" name="icon_clipboard" id="0x7f020041" />
-    <public type="drawable" name="icon_print" id="0x7f020042" />
-    <public type="drawable" name="signin_email" id="0x7f02005c" />
-    <public type="drawable" name="signin_facebook" id="0x7f02005d" />
-    <public type="drawable" name="signin_google" id="0x7f02005e" />
-    <public type="drawable" name="tab_selected" id="0x7f02006a" />
-    <public type="drawable" name="tab_unselected" id="0x7f02006b" />
-    <public type="drawable" name="topbar_shadow" id="0x7f020074" />
-    <public type="drawable" name="user_icon" id="0x7f020075" />
-    <public type="drawable" name="drawer_shadow" id="0x7f020033" />
-    <public type="drawable" name="logo_grayscale_dark" id="0x7f02004c" />
-    <public type="drawable" name="logo_grayscale_light" id="0x7f02004d" />
+    <public type="drawable" name="text_cursor_holo_dark" id="0x7f02006c" />
+    <public type="drawable" name="text_cursor_holo_light" id="0x7f02006d" />
     <public type="mipmap" name="icon" id="0x7f030000" />
     <public type="layout" name="activity_archive" id="0x7f040000" />
     <public type="layout" name="activity_backuptab" id="0x7f040001" />
@@ -765,6 +768,9 @@
     <public type="string" name="to_do_list" id="0x7f0a01ae" />
     <public type="string" name="todo_list" id="0x7f0a01af" />
     <public type="string" name="translation" id="0x7f0a01b0" />
+    <public type="string" name="calendar_overview_empty" id="0x7f0a01b1" />
+    <public type="string" name="calendar_overview_repeat" id="0x7f0a01b2" />
+    <public type="string" name="calendar_overview_title" id="0x7f0a01b3" />
     <public type="bool" name="config_auto_sort_by_status" id="0x7f0b0001" />
     <public type="bool" name="config_autolink_wiki_word" id="0x7f0b0002" />
     <public type="bool" name="config_edit_title" id="0x7f0b0003" />
@@ -779,7 +785,6 @@
     <public type="bool" name="config_use_autolink" id="0x7f0b000c" />
     <public type="bool" name="config_use_colordict" id="0x7f0b000d" />
     <public type="bool" name="config_use_note_link" id="0x7f0b000e" />
-    <public type="bool" name="config_show_lunar_date" id="0x7f0b0000" />
     <public type="dimen" name="calendar_note_size" id="0x7f0c0001" />
     <public type="dimen" name="gridLineHeight" id="0x7f0c0002" />
     <public type="dimen" name="gridTitleHeight" id="0x7f0c0003" />
@@ -840,18 +845,36 @@
     <public type="dimen" name="widget1x1size" id="0x7f0c003a" />
     <public type="dimen" name="widget_content_text_size" id="0x7f0c003b" />
     <public type="dimen" name="widget_title_text_size" id="0x7f0c003c" />
-    <public type="dimen" name="note_list_item_date_text_size" id="0x7f0c0000" />
+    <public type="style" name="Base.v11.NoTitle.Dark" id="0x7f0d0000" />
+    <public type="style" name="Base.v11.NoTitle.Light" id="0x7f0d0001" />
     <public type="style" name="Compat.CustomDialog.Dark" id="0x7f0d0002" />
     <public type="style" name="Compat.CustomDialog.Light" id="0x7f0d0003" />
+    <public type="style" name="Compat.NoTitle.Dark" id="0x7f0d0004" />
+    <public type="style" name="Compat.NoTitle.Light" id="0x7f0d0005" />
+    <public type="style" name="Compat.Normal" id="0x7f0d0006" />
     <public type="style" name="Theme.NoTitle.Dark" id="0x7f0d0007" />
     <public type="style" name="Theme.NoTitle.Light" id="0x7f0d0008" />
     <public type="style" name="Theme.Normal" id="0x7f0d0009" />
+    <public type="style" name="Base.v14.Holo.NoTitle.Dark" id="0x7f0d000a" />
+    <public type="style" name="Base.v14.Holo.NoTitle.Light" id="0x7f0d000b" />
+    <public type="style" name="Base.v14.NoTitle.Dark" id="0x7f0d000c" />
+    <public type="style" name="Base.v14.NoTitle.Light" id="0x7f0d000d" />
+    <public type="style" name="Compat.Holo.NoTitle.Dark" id="0x7f0d000e" />
+    <public type="style" name="Compat.Holo.NoTitle.Light" id="0x7f0d000f" />
     <public type="style" name="Theme.Holo.NoTitle.Dark" id="0x7f0d0010" />
     <public type="style" name="Theme.Holo.NoTitle.Light" id="0x7f0d0011" />
     <public type="style" name="Theme.Holo.Trans.NoTitle.Dark" id="0x7f0d0012" />
     <public type="style" name="Theme.Holo.Trans.NoTitle.Light" id="0x7f0d0013" />
     <public type="style" name="textAppearanceListItem" id="0x7f0d0014" />
     <public type="style" name="TextAppearance.MainToolbarTitle" id="0x7f0d0015" />
+    <public type="style" name="Base.v21.ActionBar.Normal" id="0x7f0d0016" />
+    <public type="style" name="Base.v21.Material.Dialog.Alert.Dark" id="0x7f0d0017" />
+    <public type="style" name="Base.v21.Material.Dialog.Alert.Light" id="0x7f0d0018" />
+    <public type="style" name="Base.v21.NoTitle.Dark" id="0x7f0d0019" />
+    <public type="style" name="Base.v21.NoTitle.Light" id="0x7f0d001a" />
+    <public type="style" name="Base.v21.Normal" id="0x7f0d001b" />
+    <public type="style" name="Material.AlertDialog.Dark" id="0x7f0d001c" />
+    <public type="style" name="Material.AlertDialog.Light" id="0x7f0d001d" />
     <public type="style" name="Compat.CustomDialog.Holo.Dark" id="0x7f0d001e" />
     <public type="style" name="Compat.CustomDialog.Holo.Light" id="0x7f0d001f" />
     <public type="style" name="EditEvent_Layout" id="0x7f0d0020" />
@@ -879,25 +902,6 @@
     <public type="style" name="Widget.PopupMenu.Dark" id="0x7f0d0036" />
     <public type="style" name="Widget.PopupMenu.Light" id="0x7f0d0037" />
     <public type="style" name="theme_dialog_transparent" id="0x7f0d0038" />
-    <public type="style" name="Base.v11.NoTitle.Dark" id="0x7f0d0000" />
-    <public type="style" name="Base.v11.NoTitle.Light" id="0x7f0d0001" />
-    <public type="style" name="Compat.NoTitle.Dark" id="0x7f0d0004" />
-    <public type="style" name="Compat.NoTitle.Light" id="0x7f0d0005" />
-    <public type="style" name="Compat.Normal" id="0x7f0d0006" />
-    <public type="style" name="Base.v14.Holo.NoTitle.Dark" id="0x7f0d000a" />
-    <public type="style" name="Base.v14.Holo.NoTitle.Light" id="0x7f0d000b" />
-    <public type="style" name="Base.v14.NoTitle.Dark" id="0x7f0d000c" />
-    <public type="style" name="Base.v14.NoTitle.Light" id="0x7f0d000d" />
-    <public type="style" name="Compat.Holo.NoTitle.Dark" id="0x7f0d000e" />
-    <public type="style" name="Compat.Holo.NoTitle.Light" id="0x7f0d000f" />
-    <public type="style" name="Base.v21.ActionBar.Normal" id="0x7f0d0016" />
-    <public type="style" name="Base.v21.Material.Dialog.Alert.Dark" id="0x7f0d0017" />
-    <public type="style" name="Base.v21.Material.Dialog.Alert.Light" id="0x7f0d0018" />
-    <public type="style" name="Base.v21.NoTitle.Dark" id="0x7f0d0019" />
-    <public type="style" name="Base.v21.NoTitle.Light" id="0x7f0d001a" />
-    <public type="style" name="Base.v21.Normal" id="0x7f0d001b" />
-    <public type="style" name="Material.AlertDialog.Dark" id="0x7f0d001c" />
-    <public type="style" name="Material.AlertDialog.Light" id="0x7f0d001d" />
     <public type="color" name="accent_dark" id="0x7f0e0000" />
     <public type="color" name="accent_light" id="0x7f0e0001" />
     <public type="color" name="btn_focused" id="0x7f0e0002" />
@@ -907,6 +911,8 @@
     <public type="color" name="btn_pressed_dark" id="0x7f0e0006" />
     <public type="color" name="btn_pressed_light" id="0x7f0e0007" />
     <public type="color" name="btn_selected_border" id="0x7f0e0008" />
+    <public type="color" name="control_highlight_dark" id="0x7f0e0009" />
+    <public type="color" name="control_highlight_light" id="0x7f0e000a" />
     <public type="color" name="highlight_button_text_dark" id="0x7f0e000b" />
     <public type="color" name="option_devider" id="0x7f0e000c" />
     <public type="color" name="accent_dark_holo" id="0x7f0e000d" />
@@ -916,8 +922,6 @@
     <public type="color" name="dropplace_background" id="0x7f0e0011" />
     <public type="color" name="edit_title_transparent" id="0x7f0e0012" />
     <public type="color" name="transparent" id="0x7f0e0013" />
-    <public type="color" name="control_highlight_dark" id="0x7f0e0009" />
-    <public type="color" name="control_highlight_light" id="0x7f0e000a" />
     <public type="menu" name="abstract_menu_for_id" id="0x7f0f0000" />
     <public type="menu" name="backup_menu" id="0x7f0f0001" />
     <public type="menu" name="listeditor_context_menu" id="0x7f0f0002" />
@@ -1207,4 +1211,5 @@
     <public type="id" name="sync" id="0x7f100116" />
     <public type="id" name="disconnect" id="0x7f100117" />
     <public type="id" name="sign_out" id="0x7f100118" />
+    <public type="id" name="btn_calendar_overview" id="0x7f100119" />
 </resources>

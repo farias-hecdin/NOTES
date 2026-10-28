@@ -446,4 +446,7 @@ Also visit www.colornote.com"</string>
     <string name="to_do_list">To do list</string>
     <string name="todo_list">Todo list</string>
     <string name="translation">Translations</string>
+    <string name="calendar_overview_empty">No notes registered in the calendar</string>
+    <string name="calendar_overview_repeat">Repeat</string>
+    <string name="calendar_overview_title">All calendar notes</string>
 </resources>

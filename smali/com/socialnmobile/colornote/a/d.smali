@@ -26,9 +26,9 @@
 
     .prologue
     .line 48
-    new-instance v2, Landroid/app/Notification$Builder;
+    invoke-static {p1, p3}, Lcom/socialnmobile/colornote/Compat;->notificationBuilder(Landroid/content/Context;I)Landroid/app/Notification$Builder;
 
-    invoke-direct {v2, p1}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
+    move-result-object v2
 
     .line 49
     invoke-virtual {v2, p6}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;

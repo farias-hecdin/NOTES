@@ -2,20 +2,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
-        android:title="@string/pref_online_sync_settings">
-        <PreferenceScreen
-            android:title="@string/online_backup"
-            android:key="pref_online_sync"
-            android:widgetLayout="@layout/preference_widget_icon">
-            <intent
-                android:action="note.socialnmobile.intent.action.SYNC_STATUS" />
-        </PreferenceScreen>
-        <CheckBoxPreference
-            android:title="@string/pref_sync_on_launch"
-            android:key="pref_sync_on_launch"
-            android:defaultValue="@bool/config_sync_on_launch" />
-    </PreferenceCategory>
-    <PreferenceCategory
         android:title="@string/pref_general_settings">
         <ListPreference
             android:entries="@array/default_screen_entries"

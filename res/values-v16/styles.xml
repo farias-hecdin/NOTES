@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="TextAppearance.MainToolbarTitle" parent="@style/TextAppearance">
-        <item name="android:textSize">22.0sp</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="Compat.NoTitle.Dark" parent="@style/Base.v14.NoTitle.Dark" />
-    <style name="Compat.NoTitle.Light" parent="@style/Base.v14.NoTitle.Light" />
-</resources>

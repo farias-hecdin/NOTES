@@ -1606,6 +1606,15 @@
     goto :goto_0
 .end method
 
+.method public onCalendarOverviewClicked(Landroid/view/View;)V
+    .locals 1
+
+    .prologue
+    invoke-static {p1}, Lcom/socialnmobile/colornote/feature/CalendarOverviewBridge;->open(Landroid/view/View;)V
+
+    return-void
+.end method
+
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
 

@@ -272,50 +272,6 @@
 
     if-eqz v0, :cond_14
 
-    .line 193
-    invoke-virtual {p0}, Lcom/socialnmobile/colornote/activity/Settings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v0
-
-    const-string v1, "pref_online_sync"
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v1
-
-    .line 194
-    invoke-virtual {p0}, Lcom/socialnmobile/colornote/activity/Settings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v0
-
-    const-string v2, "pref_sync_on_launch"
-
-    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v2
-
-    .line 195
-    invoke-static {p0}, Lcom/socialnmobile/colornote/sync/b;->d(Landroid/content/Context;)Lcom/socialnmobile/colornote/sync/b;
-
-    move-result-object v0
-
-    .line 197
-    if-eqz v0, :cond_16
-
-    .line 198
-    invoke-static {v0}, Lcom/socialnmobile/colornote/fragment/SyncStatus;->a(Lcom/socialnmobile/colornote/sync/b;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 199
-    const/4 v3, 0x1
-
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
-
-    .line 204
-    :goto_0
-    invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
-
     .line 207
     :cond_14
     const-string v0, "pref_show_all_day_reminder"
@@ -336,17 +292,6 @@
     .line 210
     :cond_15
     return-void
-
-    .line 201
-    :cond_16
-    const-string v0, ""
-
-    .line 202
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
-
-    goto :goto_0
 .end method
 
 .method private b(Ljava/lang/String;)V

@@ -1,5 +1,5 @@
 {
-  "apkFileName": "ColorNote_3.11.16_src.apk",
+  "apkFileName": "ColorNote_v3.11.16(5600)_src.apk",
   "PackageInfo": {
     "forcedPackageId": "127",
     "renameManifestPackage": null
@@ -23,11 +23,11 @@
     "tag": null
   },
   "unknownFiles": {},
-  "apkFilePath": "/storage/emulated/0/Apktool_M/ColorNote_3.11.16/ColorNote_3.11.16.apk",
+  "apkFilePath": "/data/app/~~S6R_duLE-XylWydDicHBRQ==/com.socialnmobile.dictapps.notepad.color.note-Sg9wuiGF2H4ecBCxAbp0Wg==/base.apk",
   "compactEntries": false,
   "isFrameworkApk": false,
   "sdkInfo": {
-    "minSdkVersion": "8",
-    "targetSdkVersion": "23"
+    "minSdkVersion": "21",
+    "targetSdkVersion": "29"
   }
 }

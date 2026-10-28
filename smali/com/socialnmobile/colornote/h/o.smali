@@ -110,7 +110,7 @@
     invoke-virtual {p1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 66
-    invoke-virtual {p0, p1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-static {p0, p1}, Lcom/socialnmobile/colornote/Compat;->startServiceCompat(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
 
     move-result-object v0
 

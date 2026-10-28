@@ -98,7 +98,8 @@
                 android:fadingEdge="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:maxLength="150000" />
+                android:maxLength="150000"
+                android:textIsSelectable="true" />
         </LinearLayout>
     </com.socialnmobile.colornote.view.EditorScrollView>
     <ListView

@@ -15,6 +15,12 @@
     <!-- Permite que app edite contenido de almacenamiento compartido. -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permite que la aplicación use servicios en primer plano. -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Permite que la aplicación muestre notificaciones -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
     <!-- Permite que la aplicación se ejecute automáticamente una vez que el sistema se haya iniciado completamente. Esto puede hacer que el teléfono tarde más en iniciarse y puede permitir que la aplicación ralentice el funcionamiento global del dispositivo. -->
     <uses-permission
         android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -24,9 +30,6 @@
     <!-- Permite que la aplicación impida que el teléfono entre en modo de suspensión. -->
     <uses-permission
         android:name="android.permission.WAKE_LOCK" />
-    <!-- Permite que la aplicación cree sockets de red y utilice protocolos de red personalizados. El navegador y otras aplicaciones proporcionan los medios necesarios para el envío de datos a Internet, por lo que no hace falta utilizar este permiso para eso. -->
-    <uses-permission
-        android:name="android.permission.INTERNET" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -40,7 +43,8 @@
         android:fullBackupOnly="true"
         android:fullBackupContent="@xml/autobackupscheme"
         android:resizeableActivity="true"
-        android:supportsPictureInPicture="true">
+        android:supportsPictureInPicture="true"
+        android:requestLegacyExternalStorage="true">
         <meta-data
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAIO673fQ6R3jVgPtleZsBfdAPiTLTlaKTQfL36Aw" />
@@ -78,17 +82,6 @@
                 <action
                     android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
             </intent-filter>
-            <intent-filter>
-                <action
-                    android:name="note.socialnmobile.intent.action.RETRY_RENEW_ON_BOOT" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.socialnmobile.colornote.receiver.PowerConnectedReceiver">
-            <intent-filter>
-                <action
-                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-            </intent-filter>
         </receiver>
         <receiver
             android:name="com.socialnmobile.colornote.receiver.BuildWidgetReceiver">
@@ -106,13 +99,6 @@
             <intent-filter>
                 <action
                     android:name="note.socialnmobile.intent.action.DAY_REMINDER" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.socialnmobile.colornote.receiver.AutoSyncReceiver">
-            <intent-filter>
-                <action
-                    android:name="note.socialnmobile.intent.action.AUTO_SYNC" />
             </intent-filter>
         </receiver>
         <receiver
@@ -151,12 +137,7 @@
         <service
             android:name="com.socialnmobile.colornote.service.SDBackupService" />
         <service
-            android:name="com.socialnmobile.colornote.service.BackgroundSyncService" />
-        <service
             android:name="com.socialnmobile.colornote.service.ReceiverProcessService" />
-        <service
-            android:name="com.socialnmobile.colornote.oauth.KeepAliveService"
-            android:exported="true" />
         <activity
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:label="@string/app_name"
@@ -291,6 +272,11 @@
         </activity>
         <activity
             android:theme="@style/Theme.NoTitle.Light"
+            android:label="@string/calendar_overview_title"
+            android:name="com.socialnmobile.colornote.feature.CalendarNotesOverview"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <activity
+            android:theme="@style/Theme.NoTitle.Light"
             android:label="@string/app_name"
             android:name="com.socialnmobile.colornote.activity.NoteEditor"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
@@ -412,42 +398,5 @@
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:label="ColorNote SyncDevSettings"
-            android:name="com.socialnmobile.colornote.sync.SyncDevSettingsActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
-            <intent-filter>
-                <action
-                    android:name="com.socialnmobile.intent.action.DEVSETTINGS" />
-                <category
-                    android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action
-                    android:name="com.socialnmobile.intent.action.DEVCMD" />
-                <category
-                    android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:name="com.socialnmobile.colornote.oauth.RedirectOauthReceiverActivity"
-            android:exported="true"
-            android:taskAffinity="colornote.task.main">
-            <intent-filter>
-                <action
-                    android:name="android.intent.action.VIEW" />
-                <category
-                    android:name="android.intent.category.DEFAULT" />
-                <category
-                    android:name="android.intent.category.BROWSABLE" />
-                <data
-                    android:scheme="com.googleusercontent.apps.908669027715" />
-            </intent-filter>
-        </activity>
-        <service
-            android:name="com.socialnmobile.colornote.sync.SyncService" />
-        <service
-            android:name="com.socialnmobile.colornote.sync.RealtimeSyncService" />
     </application>
 </manifest>

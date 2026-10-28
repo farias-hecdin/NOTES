@@ -1016,13 +1016,25 @@
 
 # virtual methods
 .method protected final synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .prologue
     .line 174
+    :try_start_0
     invoke-direct {p0}, Lcom/socialnmobile/colornote/f;->a()Ljava/lang/Long;
 
     move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v1
+
+    invoke-static {v1}, Lcom/socialnmobile/colornote/Compat;->logError(Ljava/lang/Throwable;)V
+
+    const/4 v0, 0x0
 
     return-object v0
 .end method
